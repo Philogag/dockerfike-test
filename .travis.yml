@@ -1,0 +1,11 @@
+language: bash
+
+services:
+  - docker
+
+env: 
+  - TEST=Build
+# 运行构建调度脚本
+
+script:
+  - docker build .
